@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="상태를 선택하세요."
+        android:textSize="15dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextView">
+
+        <RadioButton
+            android:id="@+id/rBT1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/TextView"
+            android:layout_below="@+id/TextView"
+            android:layout_marginTop="5dp"
+            android:checked="false"
+            android:text="공부" />
+
+        <RadioButton
+            android:id="@+id/rBT2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rBT1"
+            android:layout_toEndOf="@+id/rBT1"
+            android:checked="false"
+            android:text="놀기" />
+
+        <RadioButton
+            android:id="@+id/rBT3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rBT2"
+            android:layout_toEndOf="@+id/rBT2"
+            android:checked="false"
+            android:text="먹기" />
+
+        <RadioButton
+            android:id="@+id/rBT4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rBT3"
+            android:layout_toEndOf="@+id/rBT3"
+            android:checked="false"
+            android:text="취미생활" />
+
+        <RadioButton
+            android:id="@+id/rBT5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rBT4"
+            android:layout_toEndOf="@+id/rBT4"
+            android:checked="false"
+            android:text="기타" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TextView"
+        android:layout_centerVertical="true"
+        android:text="내용을 입력하세요."
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TextView2"
+        android:layout_below="@+id/TextView2"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:text="저장"
+        android:layout_marginEnd="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/bt_cancel" />
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:layout_marginEnd="53dp"
+        android:layout_alignTop="@+id/bt_save"
+        android:layout_alignEnd="@+id/EditText" />
+
+
+</RelativeLayout>
